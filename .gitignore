@@ -1,0 +1,5 @@
+
+*.deb
+*.eopkg
+*.rpm
+*.tar.*
