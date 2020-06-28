@@ -10,7 +10,7 @@ NoStrip = ["/"]
 IgnoreAutodep = True
 
 def setup():
-    shelltools.system("ar xf synology-drive-10240.x86_64.deb")
+    shelltools.system("ar xf synology-drive-client-11078.x86_64.deb")
     shelltools.system("tar xf data.tar.gz")
 
 def install():
