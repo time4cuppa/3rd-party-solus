@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://solus-project.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>synology-drive-client</Name>
+        <Packager>
+            <Name>time4cuppa (Joshua Hepburn)</Name>
+            <Email>espresso@timeforacuppa.com</Email>
+        </Packager>
+        <Summary>Synology Drive Client</Summary>
+        <Description>Synology Drive is a cloud storage client for the Synology Disk Station.</Description>
+        <License>Custom - https://www.synology.com/en-global/company/legal/terms_conditions</License>
+        <Archive sha1sum="721ecc56339d6434cce0719de61915445b8273c8" type="binary">https://global.download.synology.com/download/Tools/SynologyDriveClient/2.0.2-11078/Ubuntu/Installer/x86_64/synology-drive-client-11078.x86_64.deb</Archive>
+        <BuildDependencies>
+                <Dependency>binutils</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>synology-drive-client</Name>
+        <Files>
+            <Path fileType="*">/</Path>
+        </Files>
+        <AdditionalFiles>
+          <AdditionalFile owner="root" permission="0755" target="/usr/share/applications/synology-drive.desktop">synology-drive.desktop</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+    
+    <History>
+        <Update release="1">
+            <Date>28-06-2020</Date>
+            <Version>2.0.2-11078</Version>
+            <Comment>Initial Inclusion</Comment>
+            <Name>time4cuppa (Joshua Hepburn)</Name>
+            <Email>espresso@timeforacuppa.com</Email>
+        </Update>
+    </History>
+</PISI>
